@@ -1,8 +1,9 @@
 import React from 'react';
-import { useCart } from '../context/useCart.jsx';
+import  CartContext  from '../context/CartContext.jsx';
+
 
 const Cart = () => {
-  const { cartItems, removeFromCart, total } = useCart();
+  const { cartItems, removeFromCart, total } = CartContext();
 
   return (
     <div style={{ padding: '2rem', color: '#fff' }}>
