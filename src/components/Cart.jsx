@@ -1,9 +1,12 @@
 import React from 'react';
 import  CartContext  from '../context/CartContext.jsx';
+import  useCart  from '../context/useCart.jsx'; // Ensure this path is correct
 
 
 const Cart = () => {
-  const { cartItems, removeFromCart, total } = CartContext();
+  const cartContextValue = CartContext && typeof CartContext === 'function' ? CartContext() : undefined;
+  const cartHookValue = useCart();
+  const { cartItems, removeFromCart, total } = cartContextValue || cartHookValue;
 
   return (
     <div style={{ padding: '2rem', color: '#fff' }}>
