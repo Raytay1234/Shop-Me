@@ -19,10 +19,11 @@
 .product-card img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 1px;
   margin-bottom: 1rem;
-  object-fit: cover;
-  max-height: 200px;
+  object-fit: fill;
+  max-height: 600px;
+  max-width: 450px;
 }
 
 .product-card h2 {

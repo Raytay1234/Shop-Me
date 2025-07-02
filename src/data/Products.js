@@ -3,19 +3,19 @@ const products = [
     id: 1,
     name: 'Smartphone X',
     price: 699.99,
-    image: '/pics/Phone.jpg', // Update with your image path
+    image: '/pics/phone.jpg', // Update with your image path
   },
   {
     id: 2,
     name: 'Laptop Pro',
     price: 1299.99,
-    image: '/pics/Laptop.jpg', // Update with your image path
+    image: '/pics/laptop.jpg', // Update with your image path
   },
   {
     id: 3,
     name: 'Wireless Headphones',
     price: 199.99,
-    image: '/pics/Headphones.jpg', // Update with your image path
+    image: '/pics/headset.jpg', // Update with your image path
   },
   {
     id: 4,
