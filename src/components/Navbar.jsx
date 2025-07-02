@@ -8,7 +8,12 @@ export default function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="logo"><Link to="/">ElectroStore</Link></div>
+      <div className="logo">
+        <Link to="/">
+          <img src="/pics/Banner.jpg" alt="ElectroStore Logo" className="logo-image" />
+          ElectroStore
+        </Link>
+      </div>
       <ul className="nav-links">
         <li><Link to="/">Home</Link></li>
         <li><Link to="/products">Products</Link></li>

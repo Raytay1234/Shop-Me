@@ -24,7 +24,7 @@ const AboutUs = () => {
     <div className="about-us-container">
       <section className="hero">
         <img
-          src="https://via.placeholder.com/1200x400"
+          src="/pics/Banner.jpg" // Update with your banner image path
           alt="Company Banner"
           className="hero-image"
         />
