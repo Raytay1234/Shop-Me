@@ -1,9 +1,10 @@
 import React from 'react';
-import  CartContext  from '../context/CartContext.jsx';
-import  useCart  from '../context/useCart.jsx'; // Ensure this path is correct
-
+import { useNavigate } from 'react-router-dom';
+import CartContext from '../context/CartContext.jsx';
+import useCart from '../context/useCart.jsx';
 
 const Cart = () => {
+  const navigate = useNavigate();
   const cartContextValue = CartContext && typeof CartContext === 'function' ? CartContext() : undefined;
   const cartHookValue = useCart();
   const { cartItems, removeFromCart, total } = cartContextValue || cartHookValue;
@@ -21,6 +22,9 @@ const Cart = () => {
                 {item.title} × {item.quantity} = ${item.price * item.quantity}
                 <button onClick={() => removeFromCart(item.title)} style={{ marginLeft: '1rem' }}>
                   Remove
+                </button>
+                <button onClick={() => navigate('/checkout')} style={{ marginLeft: '0.5rem' }}>
+                  Proceed
                 </button>
               </li>
             ))}
