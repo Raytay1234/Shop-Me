@@ -1,5 +1,5 @@
 .product-card {
-  background-color: #1a1a1a;
+  background-color: #000000;
   border: 1px solid #2c2c2c;
   border-radius: 12px;
   padding: 1.5rem;
@@ -14,15 +14,6 @@
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 188, 212, 0.25);
-}
-
-.product-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  object-fit: cover;
-  max-height: 200px;
 }
 
 .product-card h2 {

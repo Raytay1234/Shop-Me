@@ -6,6 +6,7 @@ import About from './Pages/About.jsx';
 import Contact from './Pages/Contact-Us.jsx';
 import Cart from './components/Cart.jsx';
 import Checkout from './components/Checkout.jsx';
+import ProductGrid from './components/Product-Grid.jsx';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/product-grid" element={<ProductGrid />} />
       </Routes>
     </div>
   );
