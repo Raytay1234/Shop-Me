@@ -1,6 +1,24 @@
 import React from 'react';
 import '../styles/About.css'; // Optional: create this CSS file for custom styling
 
+const teamData = [
+  {
+    name: "Alice Johnson",
+    role: "CEO",
+    image: "/pics/mmm.jpeg" // Update with your image path
+  },
+  {
+    name: "Bob Smith",
+    role: "Lead Developer",
+    image: "/pics/wmremove-transformed.jpeg" // Update with your image path
+  },
+  {
+    name: "Mary Brown",
+    role: "Designer",
+    image: "/pics/reee.jpeg" // Update with your image path
+  }
+];
+
 const AboutUs = () => {
   return (
     <div className="about-us-container">
@@ -23,20 +41,18 @@ const AboutUs = () => {
       </section>
 
       <section className="team">
-        <h2>Meet Our Team</h2>
-        <div className="team-members">
-          {[1, 2, 3].map((member) => (
-            <div className="team-member" key={member}>
-              <img
-                src={`https://via.placeholder.com/150?text=Member+${member}`}
-                alt={`Team Member ${member}`}
-              />
-              <h3>Member {member}</h3>
-              <p>Position Title</p>
-            </div>
-          ))}
-        </div>
-      </section>
+  <h2>Meet Our Team</h2>
+  <div className="team-members">
+    {teamData.map((member, index) => (
+      <div className="team-member" key={index}>
+        <img src={member.image} alt={member.name} />
+        <h3>{member.name}</h3>
+        <p>{member.role}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
 
       <section className="history">
         <h2>Our Story</h2>
