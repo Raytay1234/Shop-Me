@@ -3,25 +3,25 @@ const products = [
     id: 1,
     name: 'Smartphone X',
     price: 699.99,
-    image: 'https://via.placeholder.com/150?text=Smartphone',
+    image: '/pics/Phone.jpg', // Update with your image path
   },
   {
     id: 2,
     name: 'Laptop Pro',
     price: 1299.99,
-    image: 'https://dummyimage.com/200x150/007bff/ffffff&text=Laptop',
+    image: '/pics/Laptop.jpg', // Update with your image path
   },
   {
     id: 3,
     name: 'Wireless Headphones',
     price: 199.99,
-    image: 'https://placehold.co/200x200?text=Headphones',
+    image: '/pics/Headphones.jpg', // Update with your image path
   },
   {
-    id: 3,
-    name: 'Wireless Headphones',
+    id: 4,
+    name: 'Motherboard Z490',
     price: 199.99,
-    image: 'https://placehold.co/200x200?text=Headphones',
+    image: '/pics/mb.jpg', // Update with your image path
   },
 ];
 
